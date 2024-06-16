@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlanlar</title>
+    <link rel="stylesheet" href="/templates/style.css/static/styles.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Aldımgitti.com</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Ana Sayfa</a>
+            <a href="{{ url_for('add_listing') }}">İlan Ekle</a>
+           
+                <a href="{{ url_for('logout') }}">Çıkış Yap</a>
+           
+                <a href="{{ url_for('login') }}">Giriş Yap</a>
+                <a href="{{ url_for('register') }}">Kayıt Ol</a>
+          
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="my-4 text-center">İlanlar</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/porsche-1.jpg" alt="Porsche 2024">
+                            <div class="card-body">
+                                <h4 class="card-title">Porsche </h4>
+                                <p class="card-text"> Taycan Turbo-s</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted"> 9.999.999 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="row">
+                  
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/kawa-1.png" alt="Kawasaki 2024">
+                            <div class="card-body">
+                                <h4 class="card-title">Kawasaki</h4>
+                                <p class="card-text">ZX4RR</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">899.999 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                  
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/hayabusa-1.webp" alt="Suzuki 2023">
+                            <div class="card-body">
+                                <h4 class="card-title">Suzuki</h4>
+                                <p class="card-text">HAYABUSA</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">1.899.999 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                  
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/kawa-2.png" alt="Kawasaki 2011">
+                            <div class="card-body">
+                                <h4 class="card-title">Kawasaki</h4>
+                                <p class="card-text">ZX6R</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">725.999 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                  
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/megane-1.jpg" alt="Renault 2009">
+                            <div class="card-body">
+                                <h4 class="card-title">Renault</h4>
+                                <p class="card-text">Megane</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">442.000 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                  
+                    <div class="col-lg-12 col-md-12 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="/toyota-1.avif" alt="Toyota 2015">
+                            <div class="card-body">
+                                <h4 class="card-title">Toyata 2015</h4>
+                                <p class="card-text">Corolla</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">655.000 TL</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

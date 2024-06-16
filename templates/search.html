@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>İlan Sitesi</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Ana Sayfa</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="my-4 text-center">Kayıt Ol</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </form>
+    </div>
+</body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Sahibinden Benzeri İlan Sitesi</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Ana Sayfa</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="my-4 text-center">Kayıt Ol</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlan Ara</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">İlan Ara</h1>
+        <form method="POST" action="{{ url_for('search') }}">
+            <div class="form-group">
+                <label for="query">Anahtar Kelime:</label>
+                <input type="text" class="form-control" id="query" name="query">
+            </div>
+            <div class="form-group">
+                <label for="category">Kategori:</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="">Hepsi</option>
+                    <option value="Emlak">Emlak</option>
+                    <option value="Vasıta">Vasıta</option>
+                    <option value="Elektronik">Elektronik</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price_min">Min Fiyat:</label>
+                <input type="number" class="form-control" id="price_min" name="price_min">
+            </div>
+            <div class="form-group">
+                <label for="price_max">Max Fiyat:</label>
+                <input type="number" class="form-control" id="price_max" name="price_max">
+            </div>
+            <button type="submit" class="btn btn-primary">Ara</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn btn-link mt-4">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
